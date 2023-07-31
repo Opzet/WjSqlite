@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\davidv\\source\\repos\\Sqlite\\WjSqlite\\WjSqlite.csproj": {}
+    "C:\\Users\\davidv\\source\\repos\\WjSqlite\\WjSqlite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\davidv\\source\\repos\\Sqlite\\WjSqlite\\WjSqlite.csproj": {
+    "C:\\Users\\davidv\\source\\repos\\WjSqlite\\WjSqlite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\davidv\\source\\repos\\Sqlite\\WjSqlite\\WjSqlite.csproj",
+        "projectUniqueName": "C:\\Users\\davidv\\source\\repos\\WjSqlite\\WjSqlite.csproj",
         "projectName": "WjSqlite",
-        "projectPath": "C:\\Users\\davidv\\source\\repos\\Sqlite\\WjSqlite\\WjSqlite.csproj",
+        "projectPath": "C:\\Users\\davidv\\source\\repos\\WjSqlite\\WjSqlite.csproj",
         "packagesPath": "C:\\Users\\davidv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\davidv\\source\\repos\\Sqlite\\WjSqlite\\obj\\",
+        "outputPath": "C:\\Users\\davidv\\source\\repos\\WjSqlite\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [

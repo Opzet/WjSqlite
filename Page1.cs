@@ -20,6 +20,15 @@ namespace WjSqlite
 
         private void Page1_Load(object sender, EventArgs e)
         {
+
+            //// Set the database initializer:
+            ////MyDb.SetInitializeNoCreate();
+            //public MyDb() : base()
+            //{
+            //    Database.SetInitializer<MyDb>(null);
+            //}
+
+
             using (MyDb Db = new MyDb())
             {
                 /*
@@ -33,6 +42,8 @@ namespace WjSqlite
                 // Perform data access using the context
                 Db.Database.Log = Console.Write;
 
+               
+
                 if (Db.Database.Exists())
                 {
                     txtDebug.Text += "Database file found\r\n";
@@ -42,8 +53,15 @@ namespace WjSqlite
                 }
 
                 //System.Data.Entity.Core.ProviderIncompatibleException: 'CreateDatabase is not supported by the provider
+                /*
+                 * Update-Package –reinstall System.Data.SQLite
+                 * 
+                    This should compile, but you can't access the database yet. 
+                    Sqlite Entity Framework provider does not create the tables, so you'll have to do this yourself.
+                        https://learn.microsoft.com/en-us/ef/core/providers/sqlite/limitations
 
-                //repos\Sqlite\WjSqlite\App_Data\sqliteDb.mdf
+                */
+                
                 Db.Database.CreateIfNotExists();  
 
                 // The database will be created if it does not exist.
