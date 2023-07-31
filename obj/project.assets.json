@@ -785,20 +785,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\davidv\\.nuget\\packages\\": {}
+    "C:\\Users\\david\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davidv\\source\\repos\\WjSqlite\\WjSqlite.csproj",
+      "projectUniqueName": "C:\\Users\\david\\source\\repos\\WjSqlite\\WjSqlite.csproj",
       "projectName": "WjSqlite",
-      "projectPath": "C:\\Users\\davidv\\source\\repos\\WjSqlite\\WjSqlite.csproj",
-      "packagesPath": "C:\\Users\\davidv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\davidv\\source\\repos\\WjSqlite\\obj\\",
+      "projectPath": "C:\\Users\\david\\source\\repos\\WjSqlite\\WjSqlite.csproj",
+      "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\david\\source\\repos\\WjSqlite\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\davidv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Wisej-2.5.config"
       ],
@@ -807,6 +807,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\IceTeaGroup\\Wisej 2.5\\nuget\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
