@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\davidv\\source\\repos\\Sqlite\\WjSqlite\\WjSqlite.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\davidv\\source\\repos\\Sqlite\\WjSqlite\\WjSqlite.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\davidv\\source\\repos\\Sqlite\\WjSqlite\\WjSqlite.csproj",
+        "projectName": "WjSqlite",
+        "projectPath": "C:\\Users\\davidv\\source\\repos\\Sqlite\\WjSqlite\\WjSqlite.csproj",
+        "packagesPath": "C:\\Users\\davidv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\davidv\\source\\repos\\Sqlite\\WjSqlite\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\davidv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Wisej-2.5.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Stub.System.Data.SQLite.Core.NetFramework": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            },
+            "System.Data.SQLite.EF6": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            },
+            "System.Data.SQLite.Linq": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            },
+            "Wisej-2": {
+              "target": "Package",
+              "version": "[2.5.*, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

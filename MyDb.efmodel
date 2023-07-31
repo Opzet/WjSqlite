@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="4.2.4.4" Id="cba47279-0950-4257-bb2c-e4d5e72a52a4" entityContainerName="MyDb" namespace="WjSqlite" automaticMigrationsEnabled="true" entityOutputDirectory="Generated" enumOutputDirectory="Generated" entityFrameworkVersion="EF6" connectionStringName="sqliteCon" showCascadeDeletes="false" databaseType="None" warnOnMissingDocumentation="false" structOutputDirectory="Generated" exposeForeignKeys="false" generateDbContextFactory="false" showInterfaceIndicators="false" xmlns="http://schemas.microsoft.com/dsltools/EFModel">
+  <comments>
+    <comment Id="3f6b6093-4858-4ce1-a2cb-abd7e010e3d3" text="Data Source=:memory:;Version=3;New=True;" />
+  </comments>
+  <classes>
+    <modelRootHasClasses Id="79abf40b-b3ea-493b-8a92-cd52c215093c">
+      <modelClass Id="9557adcc-2876-4a08-a176-359642c4354b" tableName="People" databaseSchema="dbo" namespace="WjSqlite" dbSetName="People" name="People" isOutputDirectoryTracking="false" autoPropertyDefault="true" excludeFromMigrations="false" useTemporalTables="false" isAssociationClass="false" describedAssociationElementId="00000000-0000-0000-0000-000000000000">
+        <attributes>
+          <modelAttribute Id="612eb795-111f-46d0-a1f0-cf0898109210" type="Int64" isIdentity="true" required="true" maxLength="-1" indexed="false" indexedUnique="false" stringType="None" name="Id" autoProperty="true" minLength="0" columnName="Id" columnType="default" implementNotify="false" isForeignKeyFor="00000000-0000-0000-0000-000000000000" backingFieldName="_id" databaseCollation="default" propertyAccessMode="Field" isPropertyAccessModeTracking="false" />
+          <modelAttribute Id="abc67b92-27b7-4bbf-be5e-672d9e24fbfb" maxLength="125" indexed="false" indexedUnique="false" stringType="None" name="FirstName" autoProperty="true" minLength="0" columnName="FirstName" columnType="default" implementNotify="false" isForeignKeyFor="00000000-0000-0000-0000-000000000000" backingFieldName="_firstName" databaseCollation="default" propertyAccessMode="Field" isPropertyAccessModeTracking="false" />
+          <modelAttribute Id="30922dad-f624-4867-8f1e-5e37e97205e9" maxLength="-1" indexed="false" indexedUnique="false" stringType="None" name="MiddleName" autoProperty="true" minLength="0" columnName="MiddleName" columnType="default" implementNotify="false" isForeignKeyFor="00000000-0000-0000-0000-000000000000" backingFieldName="_middleName" databaseCollation="default" propertyAccessMode="Field" isPropertyAccessModeTracking="false" />
+          <modelAttribute Id="5120248a-de9e-4eed-a02a-183e22da34a8" maxLength="125" indexed="false" indexedUnique="false" stringType="None" name="LastName" autoProperty="true" minLength="0" columnName="LastName" columnType="default" implementNotify="false" isForeignKeyFor="00000000-0000-0000-0000-000000000000" backingFieldName="_lastName" databaseCollation="default" propertyAccessMode="Field" isPropertyAccessModeTracking="false" />
+          <modelAttribute Id="4a34c994-b776-4ee6-93ca-4aed1df20dc6" maxLength="-1" indexed="false" indexedUnique="false" stringType="None" name="Email" autoProperty="true" minLength="0" columnName="Email" columnType="default" implementNotify="false" isForeignKeyFor="00000000-0000-0000-0000-000000000000" backingFieldName="_email" databaseCollation="default" propertyAccessMode="Field" isPropertyAccessModeTracking="false" />
+          <modelAttribute Id="0287f872-42f0-488a-a16b-8ec20f5f7fa6" maxLength="-1" indexed="false" indexedUnique="false" stringType="None" name="Phone" autoProperty="true" minLength="0" columnName="Phone" columnType="default" implementNotify="false" isForeignKeyFor="00000000-0000-0000-0000-000000000000" backingFieldName="_phone" databaseCollation="default" propertyAccessMode="Field" isPropertyAccessModeTracking="false" />
+          <modelAttribute Id="378229d0-7247-42f4-8e5f-6f49f0cf4b11" maxLength="-1" indexed="false" indexedUnique="false" stringType="None" name="PreferredName" autoProperty="true" minLength="0" columnName="PreferredName" columnType="default" implementNotify="false" isForeignKeyFor="00000000-0000-0000-0000-000000000000" backingFieldName="_preferredName" databaseCollation="default" propertyAccessMode="Field" isPropertyAccessModeTracking="false" />
+          <modelAttribute Id="f1da73d2-9641-468b-bc76-b8c39f4b0151" type="DateTime" maxLength="-1" indexed="false" indexedUnique="false" stringType="None" name="DOB" autoProperty="true" minLength="0" columnName="DOB" columnType="default" implementNotify="false" isForeignKeyFor="00000000-0000-0000-0000-000000000000" backingFieldName="_dOB" databaseCollation="default" propertyAccessMode="Field" isPropertyAccessModeTracking="false" />
+        </attributes>
+      </modelClass>
+    </modelRootHasClasses>
+  </classes>
+  <diagrams>
+    <modelRootHasModelDiagrams Id="d14e039d-8adc-4d4e-b72f-beb63db74e48">
+      <modelDiagramData name="MyDb" />
+    </modelRootHasModelDiagrams>
+  </diagrams>
+</modelRoot>

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "q+4d+hONx4KjsQ5Ky67oZGK+kp5qLSCl65QXti9laijTyFaQ7qlqLpF7cvtpDoY65slyORnzowGZ3LL9yxmbrg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\davidv\\source\\repos\\Sqlite\\WjSqlite\\WjSqlite.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\davidv\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\davidv\\.nuget\\packages\\stub.system.data.sqlite.core.netframework\\1.0.118\\stub.system.data.sqlite.core.netframework.1.0.118.nupkg.sha512",
+    "C:\\Users\\davidv\\.nuget\\packages\\system.data.sqlite\\1.0.118\\system.data.sqlite.1.0.118.nupkg.sha512",
+    "C:\\Users\\davidv\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512",
+    "C:\\Users\\davidv\\.nuget\\packages\\system.data.sqlite.ef6\\1.0.118\\system.data.sqlite.ef6.1.0.118.nupkg.sha512",
+    "C:\\Users\\davidv\\.nuget\\packages\\system.data.sqlite.linq\\1.0.118\\system.data.sqlite.linq.1.0.118.nupkg.sha512",
+    "C:\\Users\\davidv\\.nuget\\packages\\wisej-2\\2.5.38\\wisej-2.2.5.38.nupkg.sha512"
+  ],
+  "logs": []
+}
