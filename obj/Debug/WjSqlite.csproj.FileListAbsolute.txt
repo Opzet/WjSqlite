@@ -64,3 +64,4 @@ C:\Users\david\source\repos\WjSqlite\obj\Debug\WjSqlite.csproj.CoreCompileInputs
 C:\Users\david\source\repos\WjSqlite\obj\Debug\WjSqlite.csproj.CopyComplete
 C:\Users\david\source\repos\WjSqlite\obj\Debug\WjSqlite.dll
 C:\Users\david\source\repos\WjSqlite\obj\Debug\WjSqlite.pdb
+C:\Users\david\source\repos\WjSqlite\bin\SQLite.CodeFirst.dll

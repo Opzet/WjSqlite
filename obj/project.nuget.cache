@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+z5tnN8Th0AOQIh4C62lft+YnR5GD39AAzSI354/V7J+3uH84x/2vusxwmUMVvgoV9rws3+8Kbqd0NI7Ds7i7Q==",
+  "dgSpecHash": "5Ki2er4EGEwVpS9Pz79K6oDn4iMq8rECxcZjrcllX6wmd4rbMSAwiWBa6kBgDu9SSH7pQusqRXZG6DXne1GzOg==",
   "success": true,
   "projectFilePath": "C:\\Users\\david\\source\\repos\\WjSqlite\\WjSqlite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\david\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\david\\.nuget\\packages\\sqlite.codefirst\\1.7.0.34\\sqlite.codefirst.1.7.0.34.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\stub.system.data.sqlite.core.netframework\\1.0.118\\stub.system.data.sqlite.core.netframework.1.0.118.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\system.data.sqlite\\1.0.118\\system.data.sqlite.1.0.118.nupkg.sha512",
     "C:\\Users\\david\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512",

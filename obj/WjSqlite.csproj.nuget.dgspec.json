@@ -40,6 +40,10 @@
               "target": "Package",
               "version": "[6.4.4, )"
             },
+            "SQLite.CodeFirst": {
+              "target": "Package",
+              "version": "[1.7.0.34, )"
+            },
             "Stub.System.Data.SQLite.Core.NetFramework": {
               "target": "Package",
               "version": "[1.0.118, )"
