@@ -1,13 +1,19 @@
 ﻿# Sqlite and WiseJ
 
-This is silly...
+ Dev stopped in in .net framework, features added to .net core.
+ 
+ Frustrating it seems that .net sqlite dev stopped and basic CreateDatabase etc isnt implemented..
 
     System.Data.SQLite.EF6 System.Data.Entity.Core.ProviderIncompatibleException: 'CreateDatabase is not supported by the provider.'
 
+Discovered that .net Sqlite EF6 Features implmeneted via https://github.com/msallin/SQLiteCodeFirst
 
-Create a SQLite database using DB Browser [http://sqlitebrowser.org/] for SQLite, and create the tables 
+Otherwise you have to create a SQLite database using DB Browser [http://sqlitebrowser.org/] and create the tables manually..Argh :(
 
-https://github.com/msallin/SQLiteCodeFirst
+
+## Work in progress
+
+## Step 1: Add provider and factory to app.config
 
 ```
 
@@ -46,7 +52,7 @@ https://devtut.github.io/entityframework/entity-framework-with-sqlite.html#setti
 
 https://stackoverflow.com/questions/63494481/entity-framework-and-sqlite-the-ultimate-how-to
 
-## Step 1:
+## Step 2:
 Install SQLite in GAC
 Once per machine. Download the latest sqlite-netFx46-setup-bundle-x86-2015-1.0.xxx.0.exe (from https://system.data.sqlite.org/index.html/doc/trunk/www/downloads-unsup.wiki)
 
@@ -60,15 +66,19 @@ https://system.data.sqlite.org/downloads/1.0.118.0/sqlite-netFx46-setup-bundle-x
 Tools> NuGet Package Manager> Package Manager Console
 ```
 
-## Step 1: Entityframework ORM - EF 6.4.4
+## Step 3: Entityframework ORM - EF 6.4.4
 ```
 Install-Package EntityFramework -Version 6.4.4
 ```
 
-### Step 2: Sqlite provider and engine
+### Step 4: Sqlite provider and engine
 ```
 Install-Package System.Data.SQLite 
 ```
 
-### Step 4 :Download and install Entity Framework Visual Editor
+## Step 5: Add missing ORM features via nuget - SQLITECODE FIRST
+
+Nuget add  https://github.com/msallin/SQLiteCodeFirst
+
+### Step 6 :Download and install Entity Framework Visual Editor
 https://marketplace.visualstudio.com/items?itemName=michaelsawczyn.EFDesigner2022
