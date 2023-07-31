@@ -1,10 +1,13 @@
 ﻿# Sqlite and WiseJ
 
-Not so easy...
+This is silly...
 
-System.Data.SQLite.EF6
+    System.Data.SQLite.EF6 System.Data.Entity.Core.ProviderIncompatibleException: 'CreateDatabase is not supported by the provider.'
 
-System.Data.Entity.Core.ProviderIncompatibleException: 'CreateDatabase is not supported by the provider.'
+
+Create a SQLite database using DB Browser [http://sqlitebrowser.org/] for SQLite, and create the tables 
+
+https://github.com/msallin/SQLiteCodeFirst
 
 ```
 
