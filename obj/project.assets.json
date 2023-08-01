@@ -28,6 +28,18 @@
           "buildTransitive/EntityFramework.targets": {}
         }
       },
+      "SQLite.CodeFirst/1.7.0.34": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "lib/net45/SQLite.CodeFirst.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLite.CodeFirst.dll": {}
+        }
+      },
       "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
         "type": "package",
         "compile": {
@@ -138,6 +150,18 @@
         "build": {
           "buildTransitive/EntityFramework.props": {},
           "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "SQLite.CodeFirst/1.7.0.34": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "lib/net45/SQLite.CodeFirst.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLite.CodeFirst.dll": {}
         }
       },
       "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
@@ -252,6 +276,18 @@
           "buildTransitive/EntityFramework.targets": {}
         }
       },
+      "SQLite.CodeFirst/1.7.0.34": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "lib/net45/SQLite.CodeFirst.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLite.CodeFirst.dll": {}
+        }
+      },
       "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
         "type": "package",
         "compile": {
@@ -364,6 +400,18 @@
           "buildTransitive/EntityFramework.targets": {}
         }
       },
+      "SQLite.CodeFirst/1.7.0.34": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "lib/net45/SQLite.CodeFirst.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLite.CodeFirst.dll": {}
+        }
+      },
       "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
         "type": "package",
         "compile": {
@@ -474,6 +522,18 @@
         "build": {
           "buildTransitive/EntityFramework.props": {},
           "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "SQLite.CodeFirst/1.7.0.34": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4"
+        },
+        "compile": {
+          "lib/net45/SQLite.CodeFirst.dll": {}
+        },
+        "runtime": {
+          "lib/net45/SQLite.CodeFirst.dll": {}
         }
       },
       "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
@@ -618,6 +678,20 @@
         "tools/netcoreapp3.0/any/ef6.dll",
         "tools/netcoreapp3.0/any/ef6.pdb",
         "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
+      ]
+    },
+    "SQLite.CodeFirst/1.7.0.34": {
+      "sha512": "fQgtTOz2LvJzWnqge9B4YaCi6V7TjR0AyOC1NplzPv+d6QGDPOWVBJqc8b4XhhsnnBofxY1+DUEkiiOvIg0xRA==",
+      "type": "package",
+      "path": "sqlite.codefirst/1.7.0.34",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SQLite.CodeFirst.dll",
+        "lib/net45/SQLite.CodeFirst.dll",
+        "lib/netstandard2.1/SQLite.CodeFirst.dll",
+        "sqlite.codefirst.1.7.0.34.nupkg.sha512",
+        "sqlite.codefirst.nuspec"
       ]
     },
     "Stub.System.Data.SQLite.Core.NetFramework/1.0.118": {
@@ -776,6 +850,7 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
       "EntityFramework >= 6.4.4",
+      "SQLite.CodeFirst >= 1.7.0.34",
       "Stub.System.Data.SQLite.Core.NetFramework >= 1.0.118",
       "System.Data.SQLite >= 1.0.118",
       "System.Data.SQLite.Core >= 1.0.118",
@@ -785,20 +860,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\davidv\\.nuget\\packages\\": {}
+    "C:\\Users\\david\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davidv\\source\\repos\\WjSqlite\\WjSqlite.csproj",
+      "projectUniqueName": "C:\\Users\\david\\source\\repos\\WjSqlite\\WjSqlite.csproj",
       "projectName": "WjSqlite",
-      "projectPath": "C:\\Users\\davidv\\source\\repos\\WjSqlite\\WjSqlite.csproj",
-      "packagesPath": "C:\\Users\\davidv\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\davidv\\source\\repos\\WjSqlite\\obj\\",
+      "projectPath": "C:\\Users\\david\\source\\repos\\WjSqlite\\WjSqlite.csproj",
+      "packagesPath": "C:\\Users\\david\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\david\\source\\repos\\WjSqlite\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\davidv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\david\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Wisej-2.5.config"
       ],
@@ -807,6 +882,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\IceTeaGroup\\Wisej 2.5\\nuget\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -821,6 +897,10 @@
           "EntityFramework": {
             "target": "Package",
             "version": "[6.4.4, )"
+          },
+          "SQLite.CodeFirst": {
+            "target": "Package",
+            "version": "[1.7.0.34, )"
           },
           "Stub.System.Data.SQLite.Core.NetFramework": {
             "target": "Package",

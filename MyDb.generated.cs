@@ -19,115 +19,118 @@ using System.Linq;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure.Annotations;
+using SQLite.CodeFirst;
 
 namespace WjSqlite
 {
-   /// <inheritdoc/>
-   public partial class MyDb : DbContext
-   {
-      #region DbSets
-      public virtual System.Data.Entity.DbSet<global::WjSqlite.People> People { get; set; }
-      #endregion DbSets
+    /// <inheritdoc/>
+    public partial class MyDb : DbContext
+    {
+        #region DbSets
+        public virtual System.Data.Entity.DbSet<global::WjSqlite.People> People { get; set; }
+        #endregion DbSets
 
-      #region Constructors
+        #region Constructors
 
-      partial void CustomInit();
+        partial void CustomInit();
 
-      /// <summary>
-      /// Default connection string
-      /// </summary>
-      public static string ConnectionString { get; set; } = @"Name=sqliteCon";
-      /// <inheritdoc />
-      public MyDb() : base(ConnectionString)
-      {
-         Configuration.LazyLoadingEnabled = true;
-         Configuration.ProxyCreationEnabled = true;
-         System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
-         CustomInit();
-      }
+        /// <summary>
+        /// Default connection string
+        /// </summary>
+        public static string ConnectionString { get; set; } = @"Name=sqliteCon";
+        /// <inheritdoc />
+        public MyDb() : base(ConnectionString)
+        {
+            Configuration.LazyLoadingEnabled = true;
+            Configuration.ProxyCreationEnabled = true;
+            System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
+            CustomInit();
+        }
 
-      /// <inheritdoc />
-      public MyDb(string connectionString) : base(connectionString)
-      {
-         Configuration.LazyLoadingEnabled = true;
-         Configuration.ProxyCreationEnabled = true;
-         System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
-         CustomInit();
-      }
+        /// <inheritdoc />
+        public MyDb(string connectionString) : base(connectionString)
+        {
+            Configuration.LazyLoadingEnabled = true;
+            Configuration.ProxyCreationEnabled = true;
+            System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
+            CustomInit();
+        }
 
-      /// <inheritdoc />
-      public MyDb(string connectionString, System.Data.Entity.Infrastructure.DbCompiledModel model) : base(connectionString, model)
-      {
-         Configuration.LazyLoadingEnabled = true;
-         Configuration.ProxyCreationEnabled = true;
-         System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
-         CustomInit();
-      }
+        /// <inheritdoc />
+        public MyDb(string connectionString, System.Data.Entity.Infrastructure.DbCompiledModel model) : base(connectionString, model)
+        {
+            Configuration.LazyLoadingEnabled = true;
+            Configuration.ProxyCreationEnabled = true;
+            System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
+            CustomInit();
+        }
 
-      /// <inheritdoc />
-      public MyDb(System.Data.Common.DbConnection existingConnection, bool contextOwnsConnection) : base(existingConnection, contextOwnsConnection)
-      {
-         Configuration.LazyLoadingEnabled = true;
-         Configuration.ProxyCreationEnabled = true;
-         System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
-         CustomInit();
-      }
+        /// <inheritdoc />
+        public MyDb(System.Data.Common.DbConnection existingConnection, bool contextOwnsConnection) : base(existingConnection, contextOwnsConnection)
+        {
+            Configuration.LazyLoadingEnabled = true;
+            Configuration.ProxyCreationEnabled = true;
+            System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
+            CustomInit();
+        }
 
-      /// <inheritdoc />
-      public MyDb(System.Data.Common.DbConnection existingConnection, System.Data.Entity.Infrastructure.DbCompiledModel model, bool contextOwnsConnection) : base(existingConnection, model, contextOwnsConnection)
-      {
-         Configuration.LazyLoadingEnabled = true;
-         Configuration.ProxyCreationEnabled = true;
-         System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
-         CustomInit();
-      }
+        /// <inheritdoc />
+        public MyDb(System.Data.Common.DbConnection existingConnection, System.Data.Entity.Infrastructure.DbCompiledModel model, bool contextOwnsConnection) : base(existingConnection, model, contextOwnsConnection)
+        {
+            Configuration.LazyLoadingEnabled = true;
+            Configuration.ProxyCreationEnabled = true;
+            System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
+            CustomInit();
+        }
 
-      /// <inheritdoc />
-      public MyDb(System.Data.Entity.Infrastructure.DbCompiledModel model) : base(model)
-      {
-         Configuration.LazyLoadingEnabled = true;
-         Configuration.ProxyCreationEnabled = true;
-         System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
-         CustomInit();
-      }
+        /// <inheritdoc />
+        public MyDb(System.Data.Entity.Infrastructure.DbCompiledModel model) : base(model)
+        {
+            Configuration.LazyLoadingEnabled = true;
+            Configuration.ProxyCreationEnabled = true;
+            System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
+            CustomInit();
+        }
 
-      /// <inheritdoc />
-      public MyDb(System.Data.Entity.Core.Objects.ObjectContext objectContext, bool dbContextOwnsObjectContext) : base(objectContext, dbContextOwnsObjectContext)
-      {
-         Configuration.LazyLoadingEnabled = true;
-         Configuration.ProxyCreationEnabled = true;
-         System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
-         CustomInit();
-      }
+        /// <inheritdoc />
+        public MyDb(System.Data.Entity.Core.Objects.ObjectContext objectContext, bool dbContextOwnsObjectContext) : base(objectContext, dbContextOwnsObjectContext)
+        {
+            Configuration.LazyLoadingEnabled = true;
+            Configuration.ProxyCreationEnabled = true;
+            System.Data.Entity.Database.SetInitializer<MyDb>(new MyDbDatabaseInitializer());
+            CustomInit();
+        }
 
-      #endregion Constructors
+        #endregion Constructors
 
-      partial void OnModelCreatingImpl(System.Data.Entity.DbModelBuilder modelBuilder);
-      partial void OnModelCreatedImpl(System.Data.Entity.DbModelBuilder modelBuilder);
+        partial void OnModelCreatingImpl(System.Data.Entity.DbModelBuilder modelBuilder);
+        partial void OnModelCreatedImpl(System.Data.Entity.DbModelBuilder modelBuilder);
 
-      /// <inheritdoc />
-      protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
-      {
-         base.OnModelCreating(modelBuilder);
-         OnModelCreatingImpl(modelBuilder);
+        /// <inheritdoc />
+        protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
+        {
+          
 
-         modelBuilder.HasDefaultSchema("dbo");
+            OnModelCreatingImpl(modelBuilder);
 
-         modelBuilder.Entity<global::WjSqlite.People>()
-                     .ToTable("People")
-                     .HasKey(t => t.Id);
-         modelBuilder.Entity<global::WjSqlite.People>()
-                     .Property(t => t.Id)
-                     .IsRequired()
-                     .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
-         modelBuilder.Entity<global::WjSqlite.People>()
-                     .Property(t => t.FirstName)
-                     .HasMaxLength(125);
-         modelBuilder.Entity<global::WjSqlite.People>()
-                     .Property(t => t.LastName)
-                     .HasMaxLength(125);
 
-         OnModelCreatedImpl(modelBuilder);
-      }
-   }
+            modelBuilder.HasDefaultSchema("dbo");
+
+            modelBuilder.Entity<global::WjSqlite.People>()
+                        .ToTable("People")
+                        .HasKey(t => t.Id);
+            modelBuilder.Entity<global::WjSqlite.People>()
+                        .Property(t => t.Id)
+                        .IsRequired()
+                        .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+            modelBuilder.Entity<global::WjSqlite.People>()
+                        .Property(t => t.FirstName)
+                        .HasMaxLength(125);
+            modelBuilder.Entity<global::WjSqlite.People>()
+                        .Property(t => t.LastName)
+                        .HasMaxLength(125);
+
+            OnModelCreatedImpl(modelBuilder);
+        }
+    }
 }

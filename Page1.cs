@@ -62,7 +62,7 @@ namespace WjSqlite
 
                 */
                 
-                Db.Database.CreateIfNotExists();  
+               // Db.Database.CreateIfNotExists();  
 
                 // The database will be created if it does not exist.
                 var anyData = Db.People; // Replace YourDbSet with an actual DbSet in your context.

@@ -55,6 +55,7 @@
     <Content Include="MyDb.efmodel.diagramx">
       <DependentUpon>MyDb.efmodel</DependentUpon>
     </Content>
+    <Content Include="Sqlite-Steps.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -103,6 +104,9 @@
     <Reference Include="System.Windows.Forms" />
     <PackageReference Include="EntityFramework">
       <Version>6.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="SQLite.CodeFirst">
+      <Version>1.7.0.34</Version>
     </PackageReference>
     <PackageReference Include="Stub.System.Data.SQLite.Core.NetFramework">
       <Version>1.0.118</Version>
